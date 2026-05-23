@@ -1,0 +1,37 @@
+{
+  "name": "copy-folder-relative-path",
+  "displayName": "Copy Folder Relative Path",
+  "description": "Copy the relative path of a folder via Shift+Alt+C",
+  "version": "2026.5.23-3",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyFolderRelativePath.copy",
+        "title": "Copy Folder Relative Path"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "copyFolderRelativePath.copy",
+        "key": "shift+alt+c",
+        "when": "filesExplorerFocus && explorerResourceIsFolder"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "copyFolderRelativePath.copy",
+          "when": "explorerResourceIsFolder",
+          "group": "6_copypath@10"
+        }
+      ]
+    }
+  }
+}
