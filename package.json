@@ -2,7 +2,7 @@
   "name": "copy-folder-relative-path",
   "displayName": "Copy Folder Relative Path",
   "description": "Copy the relative path of a folder via Shift+Alt+C",
-  "version": "2026.5.23-3",
+  "version": "4",
   "publisher": "local",
   "engines": {
     "vscode": "^1.75.0"
